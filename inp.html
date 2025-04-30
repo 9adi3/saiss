@@ -11,32 +11,63 @@
 
   <body>
 
-  <form style="margin-left: 2%">
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="color">Color </label>
-        <input type="color" id="color" >
-      </div><br>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="file">File </label>
-        <input type="file" id="file" >
+    <style>
+      .form-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      .form-row label {
+        width: 120px;
+      }
+      .form-row input {
+        flex: 1;
+      }
+    </style>
+    
+    <form style="margin-left: 2%; max-width: 400px;">
+      <div class="form-row">
+        <label for="color">Color</label>
+        <input type="color" id="color">
       </div>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="range">Range </label>
-        <input type="range" id="range" min="0" max ="10" step="2" value="0" >
-      </div>      
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="number">Number </label>
-        <input type="number" id="number" min="0" max ="10" step="1" value="0"  >
+    
+      <div class="form-row">
+        <label for="file">File</label>
+        <input type="file" id="file">
       </div>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="url">URL </label>
-        <input type="url" id="url"  >
+    
+      <div class="form-row">
+        <label for="range">Range</label>
+        <input type="range" id="range" min="0" max="10" step="2" value="0">
       </div>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="date">Date </label>
-        <input type="date" id="date"  >
+    
+      <div class="form-row">
+        <label for="number">Number</label>
+        <input type="number" id="number" min="0" max="10" step="1" value="0">
       </div>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="time">Time </label>
-        <input type="time" id="time"  >
+    
+      <div class="form-row">
+        <label for="url">URL</label>
+        <input type="url" id="url">
       </div>
-      <div style="padding:8px; width:100px; height: 40px;" ><label for="datetime-local">Date & Heure </label>
-        <input type="datetime-local" id="datetime-local"  >
+    
+      <div class="form-row">
+        <label for="date">Date</label>
+        <input type="date" id="date">
       </div>
-  </form>  
+    
+      <div class="form-row">
+        <label for="time">Time</label>
+        <input type="time" id="time">
+      </div>
+    
+      <div class="form-row">
+        <label for="datetime-local">Date & Heure</label>
+        <input type="datetime-local" id="datetime-local">
+      </div>
+    </form>
+     
 
     
   <br>
