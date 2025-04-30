@@ -1,2 +1,2 @@
-alice:password123
-bob:qwerty
+alice:1234
+bob:123
