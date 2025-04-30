@@ -15,6 +15,7 @@
       .form-row {display:flex; align-items:center; gap:10px; margin-bottom: 10px;}
       .form-row label { width: 120px; color: black; font-weight: bold; font-size: 14px;}
       .form-row input {flex: 1; background-color: white; color: black; font-weight: bold; font-size: 14px;}
+      
     </style>
 
     <form style="margin-left: 2%; max-width: 400px;">
@@ -57,7 +58,7 @@
           <label for="datetime-local">Date & Heure</label>
           <input type="datetime-local" id="datetime-local">
         </div>
-    </form><br><hr>
+    </form><hr><br>
 
     <form id="Fcheckbox">
       <fieldset style="width: 300px; padding: 1%;">
@@ -93,9 +94,38 @@
         <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
                  border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;">
       </fieldset>
-    </form>
+    </form><hr><br>
     
+    <form> <label for="cnt"> Choose your country :</label>
+      <select name="country" id="cnt">
+        <optgroup label="Afrique">
+          <option value="Mar">Maroc</option>
+          <option value="Egy">Egypt</option>
+          <option value="Tun">Tunis</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="Esp">Espagne</option>
+          <option value="Fra">France</option>
+          <option value="Ita">Italie</option>
+        </optgroup>
+      </select>
+      <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
+                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 1%; margin-top: 10px;">
+    </form><br>
 
+      <label for="cnt"> Choose a language :</label>
+      <input list="language" name="lang" >
+    <datalist id="language">
+          <option value="C"></option>
+          <option value="C#"></option>
+          <option value="C++"></option>
+          <option value="Python"></option>
+          <option value="PHP"></option>
+          <option value="Java"></option>
+          <option value="Java Script"></option>
+    </datalist>
+    <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
+                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 1%; margin-top: 10px;">
      
     
   <br><hr>
