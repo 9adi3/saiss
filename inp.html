@@ -12,75 +12,95 @@
   <body>
 
     <style>
-      .form-row {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
-      }
-      .form-row label {
-        width: 120px;
-        color: black;
-        font-weight: bold;
-        font-size: 14px;
-      }
-      .form-row input {
-        flex: 1;
-        background-color: white; /* Fond blanc */
-        color: black;
-        font-weight: bold;
-        font-size: 14px;
-      }
+      .form-row {display:flex; align-items:center; gap:10px; margin-bottom: 10px;}
+      .form-row label { width: 120px; color: black; font-weight: bold; font-size: 14px;}
+      .form-row input {flex: 1; background-color: white; color: black; font-weight: bold; font-size: 14px;}
     </style>
-    
+
     <form style="margin-left: 2%; max-width: 400px;">
-      <div class="form-row">
-        <label for="color">Color</label>
-        <input type="color" id="color">
-      </div>
+        <div class="form-row">
+          <label for="color">Color</label>
+          <input type="color" id="color">
+        </div>
+
+        <div class="form-row">
+          <label for="file">File</label>
+          <input type="file" id="file">
+        </div>
+
+        <div class="form-row">
+          <label for="range">Range</label>
+          <input type="range" id="range" min="0" max="10" step="2" value="0">
+        </div>  
+
+        <div class="form-row">
+          <label for="number">Number</label>
+          <input type="number" id="number" min="0" max="10" step="1" value="0">
+        </div>
+
+        <div class="form-row">
+          <label for="url">URL</label>
+          <input type="url" id="url">
+        </div>
+      
+        <div class="form-row">
+          <label for="date">Date</label>
+          <input type="date" id="date">
+        </div>
+      
+        <div class="form-row">
+          <label for="time">Time</label>
+          <input type="time" id="time">
+        </div>
+      
+        <div class="form-row">
+          <label for="datetime-local">Date & Heure</label>
+          <input type="datetime-local" id="datetime-local">
+        </div>
+    </form><br><hr>
+
+    <form id="Fcheckbox">
+      <fieldset style="width: 300px; padding: 1%;">
+        <legend>Check a language</legend>
     
-      <div class="form-row">
-        <label for="file">File</label>
-        <input type="file" id="file">
-      </div>
+        <input id="html-c" type="checkbox" value="HTML" name="lang">
+        <label for="html-c">HTML</label><br>
     
-      <div class="form-row">
-        <label for="range">Range</label>
-        <input type="range" id="range" min="0" max="10" step="2" value="0">
-      </div>
+        <input id="css-c" type="checkbox" value="CSS" name="lang">
+        <label for="css-c">CSS</label><br>
     
-      <div class="form-row">
-        <label for="number">Number</label>
-        <input type="number" id="number" min="0" max="10" step="1" value="0">
-      </div>
+        <input id="js-c" type="checkbox" value="JS" name="lang">
+        <label for="js-c">JS</label><br>
     
-      <div class="form-row">
-        <label for="url">URL</label>
-        <input type="url" id="url">
-      </div>
+        <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
+                  border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;">
+      </fieldset>
+    </form><br>
     
-      <div class="form-row">
-        <label for="date">Date</label>
-        <input type="date" id="date">
-      </div>
+    <form id="Fradio">
+      <fieldset style="width: 300px; padding: 1%;">
+        <legend>Choose a language</legend>
     
-      <div class="form-row">
-        <label for="time">Time</label>
-        <input type="time" id="time">
-      </div>
+        <input id="html-r" type="radio" value="HTML" name="lang-radio">
+        <label for="html-r">HTML</label><br>
     
-      <div class="form-row">
-        <label for="datetime-local">Date & Heure</label>
-        <input type="datetime-local" id="datetime-local">
-      </div>
+        <input id="css-r" type="radio" value="CSS" name="lang-radio">
+        <label for="css-r">CSS</label><br>
+    
+        <input id="js-r" type="radio" value="JS" name="lang-radio">
+        <label for="js-r">JS</label><br>
+    
+        <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
+                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;">
+      </fieldset>
     </form>
     
-     
 
+     
     
-  <br>
+  <br><hr>
   <button onclick="window.location.href='index.html'" style="color: white;background-color: #0066cc;padding: 8px 16px;
-    border: none;border-radius: 5px;font-weight: bold;width: 100px;cursor: pointer;margin-left: 2%; ">Retour</button>
+    border: none;border-radius: 8px;font-weight: bold;width: 100px;cursor: pointer;margin-left: 2%; ">Retour</button>
 
   <script src="main.js"></script>
   </body>
