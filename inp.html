@@ -1,137 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="" />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <style>body { background: #6d6d6d;}</style>
-    <title>Authentification</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="" />
+  <title>Authentification</title>
 
-  <body>
+  <style>
+    body {background: #6d6d6d; font-family: Arial, sans-serif;}
+    .form-row {display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .form-row label {width: 120px; font-weight: bold; font-size: 14px; }
+    .form-row input {flex: 1; background-color: white; color: black; font-weight: bold; font-size: 14px;}
+    fieldset {width: 300px; padding: 1%;}
+    input[type="submit"] {color: white; background-color: #2a2929; padding: 8px 16px; border: none;
+      border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;}
+    button {color: white; background-color: #0066cc; padding: 8px 16px; border: none; border-radius: 8px;
+      font-weight: bold; width: 100px; cursor: pointer; margin-left: 2%; }
+  </style>
 
-    <style>
-      .form-row {display:flex; align-items:center; gap:10px; margin-bottom: 10px;}
-      .form-row label { width: 120px; color: black; font-weight: bold; font-size: 14px;}
-      .form-row input {flex: 1; background-color: white; color: black; font-weight: bold; font-size: 14px;}
-      
-    </style>
+</head>
 
-    <form style="margin-left: 2%; max-width: 400px;">
-        <div class="form-row">
-          <label for="color">Color</label>
-          <input type="color" id="color">
-        </div>
+<body>
 
-        <div class="form-row">
-          <label for="file">File</label>
-          <input type="file" id="file">
-        </div>
+  <!-- Formulaire avec différents types d'input -->
+  <form style="margin-left: 2%; max-width: 400px;">
+    <div class="form-row">
+      <label for="color">Color</label>
+      <input type="color" id="color">
+    </div>
 
-        <div class="form-row">
-          <label for="range">Range</label>
-          <input type="range" id="range" min="0" max="10" step="2" value="0">
-        </div>  
+    <div class="form-row">
+      <label for="file">File</label>
+      <input type="file" id="file">
+    </div>
 
-        <div class="form-row">
-          <label for="number">Number</label>
-          <input type="number" id="number" min="0" max="10" step="1" value="0">
-        </div>
+    <div class="form-row">
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="10" step="2" value="0">
+    </div>
 
-        <div class="form-row">
-          <label for="url">URL</label>
-          <input type="url" id="url">
-        </div>
-      
-        <div class="form-row">
-          <label for="date">Date</label>
-          <input type="date" id="date">
-        </div>
-      
-        <div class="form-row">
-          <label for="time">Time</label>
-          <input type="time" id="time">
-        </div>
-      
-        <div class="form-row">
-          <label for="datetime-local">Date & Heure</label>
-          <input type="datetime-local" id="datetime-local">
-        </div>
-    </form><hr><br>
+    <div class="form-row">
+      <label for="number">Number</label>
+      <input type="number" id="number" min="0" max="10" step="1" value="0">
+    </div>
 
-    <form id="Fcheckbox">
-      <fieldset style="width: 300px; padding: 1%;">
-        <legend>Check a language</legend>
-    
-        <input id="html-c" type="checkbox" value="HTML" name="lang">
-        <label for="html-c">HTML</label><br>
-    
-        <input id="css-c" type="checkbox" value="CSS" name="lang">
-        <label for="css-c">CSS</label><br>
-    
-        <input id="js-c" type="checkbox" value="JS" name="lang">
-        <label for="js-c">JS</label><br>
-    
-        <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
-                  border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;">
-      </fieldset>
-    </form><br>
-    
-    <form id="Fradio">
-      <fieldset style="width: 300px; padding: 1%;">
-        <legend>Choose a language</legend>
-    
-        <input id="html-r" type="radio" value="HTML" name="lang-radio">
-        <label for="html-r">HTML</label><br>
-    
-        <input id="css-r" type="radio" value="CSS" name="lang-radio">
-        <label for="css-r">CSS</label><br>
-    
-        <input id="js-r" type="radio" value="JS" name="lang-radio">
-        <label for="js-r">JS</label><br>
-    
-        <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
-                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;">
-      </fieldset>
-    </form><hr><br>
-    
-    <form> <label for="cnt"> Choose your country :</label>
-      <select name="country" id="cnt">
-        <optgroup label="Afrique">
-          <option value="Mar">Maroc</option>
-          <option value="Egy">Egypt</option>
-          <option value="Tun">Tunis</option>
-        </optgroup>
-        <optgroup label="Europe">
-          <option value="Esp">Espagne</option>
-          <option value="Fra">France</option>
-          <option value="Ita">Italie</option>
-        </optgroup>
-      </select>
-      <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
-                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 1%; margin-top: 10px;">
-    </form><br>
+    <div class="form-row">
+      <label for="url">URL</label>
+      <input type="url" id="url">
+    </div>
 
-      <label for="cnt"> Choose a language :</label>
-      <input list="language" name="lang" >
+    <div class="form-row">
+      <label for="date">Date</label>
+      <input type="date" id="date">
+    </div>
+
+    <div class="form-row">
+      <label for="time">Time</label>
+      <input type="time" id="time">
+    </div>
+
+    <div class="form-row">
+      <label for="datetime-local">Date & Heure</label>
+      <input type="datetime-local" id="datetime-local">
+    </div>
+  </form>
+
+  <hr><br>
+
+  <!-- Formulaire checkbox -->
+  <form id="Fcheckbox">
+    <fieldset>
+      <legend>Check a language</legend>
+
+      <input id="html-c" type="checkbox" value="HTML" name="lang">
+      <label for="html-c">HTML</label><br>
+
+      <input id="css-c" type="checkbox" value="CSS" name="lang">
+      <label for="css-c">CSS</label><br>
+
+      <input id="js-c" type="checkbox" value="JS" name="lang">
+      <label for="js-c">JS</label><br>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <br>
+
+  <!-- Formulaire radio -->
+  <form id="Fradio">
+    <fieldset>
+      <legend>Choose a language</legend>
+
+      <input id="html-r" type="radio" value="HTML" name="lang-radio">
+      <label for="html-r">HTML</label><br>
+
+      <input id="css-r" type="radio" value="CSS" name="lang-radio">
+      <label for="css-r">CSS</label><br>
+
+      <input id="js-r" type="radio" value="JS" name="lang-radio">
+      <label for="js-r">JS</label><br>
+
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+  <hr><br>
+
+  <!-- Formulaire de sélection pays + langue -->
+  <form style="margin-left: 2%; max-width: 400px;">
+    <label for="cnt">Choose your country:</label><br>
+    <select name="country" id="cnt">
+      <optgroup label="Afrique">
+        <option value="Mar">Maroc</option>
+        <option value="Egy">Égypte</option>
+        <option value="Tun">Tunisie</option>
+      </optgroup>
+      <optgroup label="Europe">
+        <option value="Esp">Espagne</option>
+        <option value="Fra">France</option>
+        <option value="Ita">Italie</option>
+      </optgroup>
+    </select><br><br>
+
+    <label for="language">Choose a language:</label><br>
+    <input list="language" name="lang">
     <datalist id="language">
-          <option value="C"></option>
-          <option value="C#"></option>
-          <option value="C++"></option>
-          <option value="Python"></option>
-          <option value="PHP"></option>
-          <option value="Java"></option>
-          <option value="Java Script"></option>
-    </datalist>
-    <input type="submit" value="Submit" style="color: white; background-color: #2a2929; padding: 8px 16px;
-                 border: none; border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 1%; margin-top: 10px;">
-     
-    
+      <option value="C">
+      <option value="C#">
+      <option value="C++">
+      <option value="Python">
+      <option value="PHP">
+      <option value="Java">
+      <option value="JavaScript">
+    </datalist><br>
+
+    <input type="submit" value="Submit" style="margin-left: 45%;">
+  </form>
+
   <br><hr>
-  <button onclick="window.location.href='index.html'" style="color: white;background-color: #0066cc;padding: 8px 16px;
-    border: none;border-radius: 8px;font-weight: bold;width: 100px;cursor: pointer;margin-left: 2%; ">Retour</button>
+
+  <!-- Bouton retour -->
+  <button onclick="window.location.href='index.html'">Retour</button>
 
   <script src="main.js"></script>
-  </body>
+</body>
 </html>
