@@ -7,13 +7,13 @@
   <title>Authentification</title>
 
   <style>
-    body {background: #6d6d6d; font-family: Arial, sans-serif;}
+    body {background: #6d6d6d; font-family: Arial, sans-serif;max-width: 400px;}
     .form-row {display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
     .form-row label {width: 120px; font-weight: bold; font-size: 14px; }
     .form-row input {flex: 1; background-color: white; color: black; font-weight: bold; font-size: 14px;}
-    fieldset {width: 300px; padding: 1%;}
+    fieldset {width: 390px; padding: 1%;}
     input[type="submit"] {color: white; background-color: #2a2929; padding: 8px 16px; border: none;
-      border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 65%; margin-top: 10px;}
+      border-radius: 10px; font-weight: bold; cursor: pointer; margin-left: 80%; margin-top: 10px;}
     button {color: white; background-color: #0066cc; padding: 8px 16px; border: none; border-radius: 8px;
       font-weight: bold; width: 100px; cursor: pointer; margin-left: 2%; }
   </style>
@@ -23,7 +23,7 @@
 <body>
 
   <!-- Formulaire avec différents types d'input -->
-  <form style="margin-left: 2%; max-width: 400px;">
+  <form style="margin-left: 2%;">
     <div class="form-row">
       <label for="color">Color</label>
       <input type="color" id="color">
@@ -108,7 +108,7 @@
   <hr><br>
 
   <!-- Formulaire de sélection pays + langue -->
-  <form style="margin-left: 2%; max-width: 400px;">
+  <form>
     <label for="cnt">Choose your country:</label><br>
     <select name="country" id="cnt">
       <optgroup label="Afrique">
@@ -135,10 +135,27 @@
       <option value="JavaScript">
     </datalist><br>
 
-    <input type="submit" value="Submit" style="margin-left: 45%;">
-  </form>
+    <input type="submit" value="Submit">
+  </form><br><hr>
 
-  <br><hr>
+  <form><!-- Ajout de la proprieté "novalidate" pour desactiver les proprietées a l'interier du form -->
+    <input type="text" name="user" placeholder="user">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="send" style="margin-left: 53%;"> 
+    <input type="reset" value="clear">
+    <input type="button" value="executer"><br><hr> 
+    
+    <div>
+      <input type="text" name="title" placeholder="title" maxlength="20" minlength="8" autofocus>
+    </div>
+    <div>
+      <textarea name="content"  placeholder="content..." cols="21" rows="6"></textarea>
+    </div> 
+    <input type="submit"> 
+  </form><hr> 
+
+  <input type="text" disabled value="'disabled': Désactiver n'envoie aucune valeur" style="width: 270px;"><br><br>
+  <input type="text" readonly value="'readonly': Envoie la valeur qu'il contient" style="width: 270px;"><hr><br> 
 
   <!-- Bouton retour -->
   <button onclick="window.location.href='index.html'">Retour</button>
