@@ -16,8 +16,8 @@ animation: x 4s linear 2s 3 normal forwards running;}
 
 @keyframes x { 
 0%  {background:aqua  ;translate:    0px    0px;rotate:  0deg}
-25% {background:green ;translate:    0px  800px;rotate: 90deg}
-50% {background:red   ;translate: 1200px  800px;rotate:180deg}
+25% {background:green ;translate:    0px  700px;rotate: 90deg}
+50% {background:red   ;translate: 1200px  700px;rotate:180deg}
 75% {background:yellow;translate: 1200px    0px;rotate:270deg}
 100%{background:blue  ;translate:    0px    0px;rotate:360deg}
 }
