@@ -22,4 +22,3 @@ animation: x 4s linear 2s 3 normal forwards running;}
 100%{background:blue  ;translate:    0px    0px;rotate:360deg}
 }
 div:hover{    animation-play-state: paused;cursor: pointer;}
- 
