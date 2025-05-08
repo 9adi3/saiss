@@ -11,14 +11,14 @@ div{height: 100px;width: 100px;background: red;
     animation-fill-mode: forwards ; 
     animation-play-state: running; */
 
-animation: x 4s linear 3s 3 normal forwards running;}
+animation: x 4s linear 2s 3 normal forwards running;}
 
 
 @keyframes x { 
-0%  {background:aqua   ;translate: 000px 000px;rotate:0deg}
-25% {background:green ;translate: 000px 400px;rotate:90deg}
-50% {background:red ;translate: 400px 400px;rotate:180deg}
-75% {background:yellow;translate: 400px 000px;rotate:270deg}
-100%{background:blue  ;translate: 000px 000px;rotate:360deg}
+0%  {background:aqua  ;translate:    0px    0px;rotate:  0deg}
+25% {background:green ;translate:    0px  800px;rotate: 90deg}
+50% {background:red   ;translate: 1200px  800px;rotate:180deg}
+75% {background:yellow;translate: 1200px    0px;rotate:270deg}
+100%{background:blue  ;translate:    0px    0px;rotate:360deg}
 }
 div:hover{    animation-play-state: paused;cursor: pointer;}}
