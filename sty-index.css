@@ -1,28 +1,57 @@
-/* Reset et base */
-* {  margin: 0;  padding: 0;  box-sizing: border-box;}
 
-body {  background-color: #000;  display: flex;
-        justify-content: flex-start;  align-items: flex-start;
-        font-family: 'Segoe UI', sans-serif; }
+*{margin: 0;padding: 0;}
 
-/* Container du menu */
-.menu { width: 260px;height: 100vh;  background-color: #103861;
-  padding: 25px 20px;  border-radius: 12px;  box-shadow: 0 8px 16px #00000080;
-  transition: 0.3s ease;}
+body{   background: linear-gradient(#01012e,#240019);
+        height: 100vh;font-family: system-ui;}
+section{background: url('stars1.png');
+        display: flex; height: 100vh; margin: 20px 2px;  }
 
-/* Liste des liens */
-.menu ul {  list-style: none;}
 
-.menu ul li {  margin-bottom: 15px;}
+ul{text-align: center;}   
+ul:hover li a{ opacity: 0;}     
+ul li{list-style: none;margin: 10px 0px;}    
+ul li a{color: #fff; text-decoration: none;font-size: 14px;
+        font-weight: 500; letter-spacing: 4px;height: 30px;
+        background:darkblue ;
+        padding: 6px 15px;
+        border-radius: 20px; 
+        display: inline-block;
+        text-transform: uppercase; 
+        width: 200px;
+        transform: 0.9s; 
+        position:relative ;
+        z-index: 10;       }
 
-.menu ul li a {  display: flex;  align-items: center;  justify-content: flex-start;
-  gap: 12px;  background-color: #2d5d99;  padding: 14px 18px;
-  border-radius: 8px;  text-decoration: none;  color: #fff;
-  transition: background-color 0.5s ease, transform 0.9s ease;}
+ul li a:hover{transform: scale(1.5);width: 260px;;
+        background: darkmagenta;
+        opacity: 1;}
 
-.menu ul li a:hover {  background-color: #1c78be; height: 60px;
-              transform: translateX(5px);}
-
-/* Texte des liens */
-.menu ul li a p {  font-size: 17px;  color: #ffffff;  letter-spacing: 0.8px;
-  font-family: 'Verdana', sans-serif;  margin: 0;}
+ul li::after{content: attr(data-text);
+        color: #fff;
+        position: absolute;
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        font-weight: 900;
+        text-transform: uppercase;
+        opacity: 0;
+        letter-spacing: 40px;
+        pointer-events: none;
+        transition: 0.9s;        }
+ul li:hover:after{opacity: 0.5;
+        letter-spacing: 5px;}
+ul li::before{content:'';
+        width: 200px;
+        height: 120px;
+        background: #fff;
+        position: absolute;
+        left: 75%;
+        top: 55%;
+        transform: translate(-50%,80%);
+        border-radius: 50%;
+        box-shadow: 0 0 80px orangered;
+        opacity: 0;
+        transition: 0.5s;}
+ul li:hover::before{opacity: 0.5;width: 120px;}
+ 
