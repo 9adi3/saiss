@@ -1,0 +1,28 @@
+/* Reset et base */
+* {  margin: 0;  padding: 0;  box-sizing: border-box;}
+
+body {  background-color: #000;  display: flex;
+        justify-content: flex-start;  align-items: flex-start;
+        font-family: 'Segoe UI', sans-serif; }
+
+/* Container du menu */
+.menu { width: 260px;height: 100vh;  background-color: #103861;
+  padding: 25px 20px;  border-radius: 12px;  box-shadow: 0 8px 16px #00000080;
+  transition: 0.3s ease;}
+
+/* Liste des liens */
+.menu ul {  list-style: none;}
+
+.menu ul li {  margin-bottom: 15px;}
+
+.menu ul li a {  display: flex;  align-items: center;  justify-content: flex-start;
+  gap: 12px;  background-color: #2d5d99;  padding: 14px 18px;
+  border-radius: 8px;  text-decoration: none;  color: #fff;
+  transition: background-color 0.5s ease, transform 0.9s ease;}
+
+.menu ul li a:hover {  background-color: #1c78be; height: 60px;
+              transform: translateX(5px);}
+
+/* Texte des liens */
+.menu ul li a p {  font-size: 17px;  color: #ffffff;  letter-spacing: 0.8px;
+  font-family: 'Verdana', sans-serif;  margin: 0;}
