@@ -4,7 +4,7 @@
 body{   background: linear-gradient(#01012e,#240019);
         height: 100vh;font-family: system-ui;}
 section{background: url('stars1.png');
-        display: flex;  margin: 20px 2px;  }
+        display: flex;  margin: 20px 2px; height: 90%;  }
 
 
 ul{text-align: center; height: 100%;}   
