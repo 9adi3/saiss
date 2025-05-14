@@ -19,12 +19,21 @@ ul li:hover{ transform: scale(1.1);background: #6d6767;padding: 10px 2px;
     border-radius: 20px; color: #000; }
 .text h2{ text-transform: uppercase;font-size: 40px; }
 .text p{margin: 20px 0;}
-.image{width: 30%;}
-.image img{width: 180px;}
+.image{width: 35%;}
+.image img{width: 300px;}
 
-.icons{position: absolute;bottom: 20px;left: 60%;transform: translate(-50%);}
-.icons img{width: 15%;transition: transform 0.9s;}
+.icons{position: absolute;bottom: 50px;left: 60%;transform: translate(-50%);}
+.icons img{width: 10%;transition: transform 0.9s;}
 .icons img:hover{ transform: scale(1.2);cursor: pointer; }
 button{color: white;background-color: #0066cc;padding: 8px 16px;
   border: none;border-radius: 5px;font-weight: bold;width: 100px;
-  cursor: pointer; position: absolute; bottom: 20px;left: 10px; }
+  cursor: pointer; position: absolute; bottom: 20px;left: 20px; }
+ 
+
+@media (max-width:1000px) {
+        .icons{bottom: 200px;left: 60%;transform: translate(-50%);}
+        .icons img{width: 18%;transition: transform 0.9s;}
+        .icons img:hover{ transform: scale(1.4);}
+        .image img{width: 200px;}
+        button {bottom: 170px;}
+    }
