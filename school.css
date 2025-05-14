@@ -56,11 +56,5 @@ nav ul li:hover{transform: scale(1.2); background: #144aad;border-radius: 30px;}
 .content .service .ds h3{padding: 40px; text-transform: capitalize;transform: scale(1.2);}
 
 
-
-
-
-
-@media (max-width:1000px)  {
-    .head .text {max-width: 300px;}
-    .plus::before{transform: translate(200%,10%);} }      
+     
         
