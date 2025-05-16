@@ -1,60 +1,53 @@
-*{margin: 0;padding: 0;}
+* {  margin: 0;  padding: 0; box-sizing: border-box;}
 
-body{ width: 100%; }
+body { background: beige; font-family: Arial, sans-serif;}
 
-nav{background: #237ec9; display:flex;  justify-content:space-between ;
-    width: 100%;padding: 40px 0;color: aliceblue; }
-nav::before{content: ''; width: 165px; height: 50px;
-        background:#4c4949;
-        border-radius: 50%;
-        position: absolute;
-        transform: translate(20px,-10%);        
-        z-index: 0;  }    
+nav { height: 67px; background-color: #396bbb; display: flex;
+  align-items: center; padding: 0 20px;}
 
-nav h2{margin-left: 20px; letter-spacing: 2px;font-size: 40px;z-index: 1;}    
-nav ul{ margin-right: 5%; }   
-nav li{display: inline-flex;padding: 10px 15px;}
-nav li a{text-decoration: none;  color: aliceblue;font-size: 26px;}
-nav ul li:hover{transform: scale(1.2); background: #144aad;border-radius: 30px;}
+.t1 { font-size: 30px; background: #575555; border-radius: 50%;
+  padding: 10px; color: white;}
+
+nav ul { list-style: none; display: flex; margin-left: auto;}
+
+nav ul li { margin: 0 10px;}
+
+nav a { text-decoration: none; color: white; font-size: 22px;}
+
+.content { height: 500px; text-align: center; background-image: url('img/school1.jpg');
+         background-attachment: fixed; background-size: cover; color: blue; 
+         display: flex; align-items: center;justify-content: center;}
+
+.c1 { padding: 150px 20px;}
+
+.tContent { font-size: 50px;}
+
+.p1 { margin: 25px 0; font-size: 22px;}
+
+.btn1, .btn2, .btn3 { border-radius: 50px; background: red; color: white; 
+        padding: 10px 20px; border: none; cursor: pointer;}
+
+.t2 { font-size: 35px; color: blue; padding: 40px 10px;text-align: center;}
+
+.container { display: flex; flex-wrap: wrap; padding: 0 20px;}
+
+.c2 { width: 70%; min-height: 500px;}
+
+.secImg {  width: 30%;}
+
+#img1 { width: 100%; height: auto; min-height: 500px;}
+
+p { padding: 10px 0;}
 
 
-.head { position: relative; min-height: 900px; }
-.head .image { position: absolute;  width: 100%; height: 100%; z-index: 0; }
-.head .image img { width: 100%; height: 100%; object-fit: cover; }
-.head .text { position: relative; z-index: 1; color: rgb(18, 3, 224);
-                 max-width: 500px; margin: auto;text-align: center; transform: scale(1.9); }
-.head h2{padding: 100px 0; letter-spacing: 1px; font-size: 50px;height: 100%;  }  
+.d { float: left; width: 33%; min-height: 150px; background-color: grey;
+  padding: 20px; box-sizing: border-box; transition: background 0.3s, border 0.3s;}
+
+.d:hover { background: whitesmoke; border: 1px solid #575555;}
+
+.form1 { width: 40%; float: left; padding: 20px;}
+
+footer { background-color: blue; color: white; text-align: center; height: 60px;
+  display: flex; align-items: self-end; justify-content:right;}
   
-.head .text .plus::before{content: 'Plus'; width: 55px; height: 50px;
-        background:red;        ;
-        border-radius: 50%;
-        color: aliceblue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        transform: translate(400%,10%);  }
-
-.content{ position: relative ; background: #e4d5c8 ;border: solid 3px black; }
-.titre{text-align:center ;text-transform: capitalize; color:blue;padding: 40px 0;transform: scale(1.5); }
-.content .histoire {display:flex; justify-content:space-between ; margin-left: 30px; height:100%;}
-.content .histoire .tContent p{ width: 90%;font-size: 20px; padding: 10px;text-align: center;}
-.content .histoire img{min-width: 35%;}
-.content .histoire .tContent .plus::before{content: 'Plus'; width: 55px; height: 50px;
-        background:red;        ;
-        border-radius: 50%;
-        color: aliceblue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 30%;
-        top: 65%;
-        transform: translate(-20%, -20%); }
-.content .service{ background: #b8b3a9 ;border: solid 3px red; display: inline-flex; padding: 30px;}
-.content .service .ds{padding: 20px; }
-.content .service .ds h3{padding: 40px; text-transform: capitalize;transform: scale(1.2);}
-
-
-     
-        
+input{width: 50%;height: 25px;margin: 0 0 2% 0;}
