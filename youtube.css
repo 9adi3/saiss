@@ -16,9 +16,7 @@ header{display:flex; justify-content:space-between; align-items:center; height: 
 .m-section .mic:hover, button:hover {border-color: #c6c6c6; background-color: #f0f0f0;}  
 .m-section .mic{display: flex;justify-content: center;align-items: center;cursor: pointer;
     width: 40px;height: 40px; border-radius: 50%;margin-left: 10px; background-color:#f9f9f9; }
-.r-section a{padding-right: 18px; text-decoration: none; color: black;
-
-}  
+.r-section a{padding-right: 18px; text-decoration: none; color: black; }  
 
 
 
@@ -43,6 +41,7 @@ header{display:flex; justify-content:space-between; align-items:center; height: 
 
 @media (max-width:1100px)   {
     .m-section form {width:100%;}
+    .r-section a{padding: 0px; }  
 
 }     
 
