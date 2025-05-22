@@ -13,9 +13,29 @@ header{display:flex; justify-content:space-between; align-items:center; height: 
         border: 1px solid #d3d3d3; border-right: none;}
 .m-section button{width: 64px; border: 1px solid #d3d3d3; border-radius: 0 3px 3px 0;
         padding-top: 4px;background-color: #f8f8f8; cursor: pointer;}
+.m-section .mic:hover, button:hover {border-color: #c6c6c6; background-color: #f0f0f0;}  
+.m-section .mic{display: flex;justify-content: center;align-items: center;cursor: pointer;
+    width: 40px;height: 40px; border-radius: 50%;margin-left: 10px; background-color:#f9f9f9; }
+.r-section a{padding-right: 18px; text-decoration: none; color: black;
 
-.m-section .mic{display: flex;justify-content: center;align-items: center; background-color: #f9f9f9; 
-    width: 40px;height: 40px; border-radius: 50%;margin-left: 10px; cursor: pointer; }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
