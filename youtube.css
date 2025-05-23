@@ -33,8 +33,8 @@ nav p{font-size: 1.4rem;color: #606060; font-weight: 500;padding: 8px 16px;}
 main {width: 100%;height: 100%;padding: 35px 15px;border-top: 1px solid #ddd;overflow-y: auto;}
 .videos-container{display: flex;flex-direction: row;justify-content: space-around;flex-wrap: wrap;}
 .video { width: 330px; margin-bottom:40px; cursor: pointer;}
-.thumbnail {width: 100%;height: 187px;margin-bottom: 12px;border-radius:15px;}
-.thumbnail img{width: 100%;height: 100%;}
+.thumbnail {width: 100%;height: 187px;margin-bottom: 12px;}
+.thumbnail img{width: 100%;height: 100%;border-radius:15px;}
 .video-details{display: flex;}
 .creator-img img{height: 40px;width: 40px;border-radius: 50%;margin-right: 12px;}
 .title {display: flex; flex-direction: column;}
@@ -59,4 +59,3 @@ main {width: 100%;height: 100%;padding: 35px 15px;border-top: 1px solid #ddd;ove
     .r-section a{padding: 0px; }  
 
 }     
-
