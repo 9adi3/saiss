@@ -74,7 +74,7 @@ main {width: 71%;height: 100%;margin-left: 29%;}
 .trending-item:hover, .show-more:hover{background: #1c1e22;cursor: pointer; }
 .show-more{display: flex;align-items: center;color: #1c88d2;font-size: 1.7rem; 
     font-weight: 500;width: 100%;padding: 15px 15px; border-radius: 0 0 15px 15px;}
-.follow {border: 1px solid red; display: flex; flex-direction: column; height: 250px;
+.follow { display: flex; flex-direction: column; height: 250px;
     max-width: 355px; border-radius: 16px; background-color: #212327; margin-top: 15px;}
 
 .follow-profile{display: flex; align-items: center;justify-content: space-between;
