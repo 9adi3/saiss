@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion Café</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>☕ Gestion de Commandes - Café</h1>
+
+  <div id="menu">
+    <h2>Menu</h2>
+    <ul>
+      <li onclick="addToOrder('Café', 10)">☕ Café - 10 DH</li>
+      <li onclick="addToOrder('Thé', 8)">🍵 Thé - 8 DH</li>
+      <li onclick="addToOrder('Croissant', 12)">🥐 Croissant - 12 DH</li>
+      <li onclick="addToOrder('Jus d\'orange', 15)">🍊 Jus - 15 DH</li>
+    </ul>
+  </div>
+
+  <div id="order">
+    <h2>Commande</h2>
+    <ul id="orderList"></ul>
+    <p><strong>Total :</strong> <span id="total">0</span> DH</p>
+
+    <button onclick="printTicket()">🖨️ Imprimer le ticket</button>
+    <button onclick="resetOrder()">🔁 Réinitialiser</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
