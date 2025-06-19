@@ -22,6 +22,114 @@
 </head>
 <body>
 
+  <div class="cart active">
+    <div class="top_cart">
+      <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+      <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+    </div>
+
+    <div class="items_in_cart" id="cart_items">
+      <div class="item_cart">
+        <img src="img/product/10.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/10.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/11.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>      
+
+      <div class="item_cart">
+        <img src="img/product/12.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/13.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart">
+        <img src="img/product/11.png" alt="">
+        <div class="content">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase_quantity">+</button>
+          </div>
+        </div>
+        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+
+    </div>
+
+    <div class="bottom_cart">
+      <div class="total">
+        <p>subtotal</p>
+        <p class="price_cart_total">$0</p>
+      </div>
+      <div class="button_cart">
+        <a href="" class="btn_cart btn">Checkout</a>
+        <span onclick="open_close_cart()" class="btn_cart trans_bg btn">Shop More</span>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- Header -->
   <header>
     <div class="top_header">
@@ -50,7 +158,7 @@
           <div class="icon">
             <a href=""><i class="fa-regular fa-heart"></i><span class="count count_favourite">0</span></a>
           </div>
-          <div class="icon">
+          <div onclick="open_close_cart()" class="icon">
             <a href=""><i class="fa-solid fa-cart-shopping"></i><span class="count count_item_header">0</span></a>
           </div>
         </div>
