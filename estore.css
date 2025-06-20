@@ -384,7 +384,7 @@ header .bottom_header .nav_links li.active a{ color: var(--main_color);}
 
 .product .icons .btn_add_cart.active {
   color: var(--color_heading);
-  background: transparent;}
+  background: transparent;pointer-events: none;}
 .product .icons .btn_add_cart.active i {color: var(--main_color);}
 .product .icons .btn_add_cart:hover {scale: 1.05;  background: #f47600;}
 
