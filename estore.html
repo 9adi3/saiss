@@ -17,103 +17,19 @@
 
 
 
-
   
 </head>
 <body>
 
-  <div class="cart">
+  <div class="cart active">
     <div class="top_cart">
-      <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
-      <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        <h3>Cart Items : <span class="Count_item_cart">0</span></h3>
+        <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
     </div>
 
     <div class="items_in_cart" id="cart_items">
-      <div class="item_cart">
-        <img src="img/product/10.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>
 
-      <div class="item_cart">
-        <img src="img/product/10.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>
-
-      <div class="item_cart">
-        <img src="img/product/11.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>      
-
-      <div class="item_cart">
-        <img src="img/product/12.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>
-
-      <div class="item_cart">
-        <img src="img/product/13.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>
-
-      <div class="item_cart">
-        <img src="img/product/11.png" alt="">
-        <div class="content">
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-          <p class="price_cart">$80</p>
-          <div class="quantity_control">
-            <button class="decrease_quantity">-</button>
-            <span class="quantity">3</span>
-            <button class="increase_quantity">+</button>
-          </div>
-        </div>
-        <button class="delete_item"> <i class="fa-solid fa-trash-can"></i></button>
-      </div>
-
-
+      
     </div>
 
     <div class="bottom_cart">
@@ -337,7 +253,7 @@
         <div class="top_slide">
           <h2><i class="fa-solid fa-tags"></i>Appliances</h2>
         </div>
-        <div class="products swiper-wrapper" id="swiper_applinaces">        
+        <div class="products swiper-wrapper" id="swiper_appliances">        
         </div>
         <div class="swiper-button-next btn_Swip"></div>
         <div class="swiper-button-prev btn_Swip"></div>
@@ -435,9 +351,10 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   
   <!-- File Scripts -->
-  <script src="estore.js"></script>
   <script src="estore_swiper.js"></script>
   <script src="estore_items.js"></script>
+  <script src="estore.js"></script>
+
 
 </body>
 </html>
