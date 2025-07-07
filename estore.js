@@ -2,22 +2,22 @@
 let category_nav_list = document.querySelector(".category_nav_list");
 
 function Open_Categ_list() {
-  if (category_nav_list) category_nav_list.classList.toggle("active");
-}
+  if (category_nav_list) category_nav_list.classList.toggle("active");}
+  
 
 // Menu links
 let nav_links = document.querySelector(".nav_links");
 
 function open_Menu() {
-  if (nav_links) nav_links.classList.toggle("active");
-}
+  if (nav_links) nav_links.classList.toggle("active");}
+
 
 // Cart panel
 let cart = document.querySelector(".cart");
 
 function open_close_cart() {
-  if (cart) cart.classList.toggle("active");
-}
+  if (cart) cart.classList.toggle("active");}
+
 
 // Charger les produits et lier les boutons "Ajouter au panier"
 fetch("products.json")
@@ -59,14 +59,14 @@ function updateCart() {
   const cartItemsContainer = document.getElementById("cart_items");
   const checkout_items = document.getElementById("checkout_items");
 
-  const items_input = document.getElementById("items");
-  const total_price_input = document.getElementById("total_price");
-  const count_items_input = document.getElementById("count_items");
+  let items_input = document.getElementById("items");
+  let total_price_input = document.getElementById("total_price");
+  let count_items_input = document.getElementById("count_items");
 
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  let total_price = 0;
-  let total_count = 0;
+  var total_price = 0;
+  var total_count = 0;
 
   if (checkout_items) {
     checkout_items.innerHTML = "";
@@ -82,6 +82,7 @@ function updateCart() {
     total_price += total_price_item;
     total_count += item.quantity;
 
+    // check out inputs
     if (items_input) {
       items_input.value += `${item.name} --- price : ${total_price_item} --- count : ${item.quantity}\n`;
     }
